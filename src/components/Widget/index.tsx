@@ -1,16 +1,17 @@
-import React, { useRef, useState } from "react";
-import { TouchableOpacity } from "react-native";
-import { ChatTeardropDots } from "phosphor-react-native";
-import BottomSheet from "@gorhom/bottom-sheet";
-import { gestureHandlerRootHOC } from "react-native-gesture-handler";
+import React, { useRef, useState } from 'react';
+import { TouchableOpacity } from 'react-native';
+import { ChatTeardropDots } from 'phosphor-react-native';
+import { BottomSheet } from '@gorhom/bottom-sheet';
+import { gestureHandlerRootHOC } from 'react-native-gesture-handler';
 
-import { Options } from "../Options";
-import { Form } from "../Form";
+import { Options } from '../Options';
+import { Forms } from '../Form';
+import { Success } from '../Success';
 
-import { styles } from "./styles";
-import { theme } from "../../theme";
-import { feedbackTypes } from "../../utils/feedbackTypes";
-import { Success } from "../Success";
+import { styles } from './styles';
+import { theme } from '../../theme';
+import { feedbackTypes } from '../../utils/feedbackTypes';
+
 
 
 export type FeedbackType = keyof typeof feedbackTypes;
@@ -54,7 +55,7 @@ function Widget() {
         ) : (
           <>
             {feedbackType ? (
-              <Form
+              <Forms
                 feedbackType={feedbackType}
                 onFeedbackCanceled={handleRestartFeedback}
                 onFeedbackSent={handleFeedbackSent}
