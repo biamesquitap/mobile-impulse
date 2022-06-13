@@ -1,4 +1,4 @@
-import React { useState } from 'react';
+import React, { useState } from 'react';
 import { 
   View,
   TextInput,
@@ -15,7 +15,7 @@ import { Button } from '../../components/Button'
 import { theme } from '../../theme';
 import { styles } from './styles';
 import { feedbackTypes } from '../../utils/feedbackTypes';
-import { useState } from 'react';
+
 
 interface Props {
   feedbackType: FeedbackType;
@@ -60,7 +60,7 @@ export function Forms({ feedbackType }: Props ) {
           />
           <Text style={styles.titleText}>
             {feedbackTypeInfo.title}
-          <Text/>
+          </Text>
         </View>
       </View>
 

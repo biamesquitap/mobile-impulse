@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
     width: 24,
     height: 24,
     marginRight: 8
-  }
+  },
   input: {
     height: 112,
     padding: 12,

@@ -1,7 +1,12 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { Copyright } from '../Copyright';
-import { Copyright } from '../Option';
+import { Option } from '../Option';
+import { FeedbackType } from "../Widget";
+
+interface Props {
+  onFeedbackTypeChanged: (feedbackType: FeedbackType) => void;
+}
 
 import { feedbackTypes } from '../../utils/feedbackTypes';
 import { styles } from './styles';

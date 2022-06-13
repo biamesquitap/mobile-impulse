@@ -6,7 +6,7 @@ import { gestureHandlerRootHOC } from 'react-native-gesture-handler';
 
 import { Options } from '../Options';
 import { Forms } from '../Form';
-import { Success } from '../Success';
+import { Success } from '../Sucess';
 
 import { styles } from './styles';
 import { theme } from '../../theme';
