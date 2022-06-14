@@ -8,7 +8,7 @@ import {
   useFonts,
   Inter_500Medium,
   Inter_400Regular,
-} from "@expo-google-fonts/inter";
+} from '@expo-google-fonts/inter';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
